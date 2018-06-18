@@ -1,0 +1,9 @@
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.Util\bin\Debug\netcoreapp2.1\MazzaFC.Infraestrutura.Util.deps.json
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.Util\bin\Debug\netcoreapp2.1\MazzaFC.Infraestrutura.Util.dll
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.Util\bin\Debug\netcoreapp2.1\MazzaFC.Infraestrutura.Util.pdb
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.Util\obj\Debug\netcoreapp2.1\MazzaFC.Infraestrutura.Util.csprojAssemblyReference.cache
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.Util\obj\Debug\netcoreapp2.1\MazzaFC.Infraestrutura.Util.csproj.CoreCompileInputs.cache
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.Util\obj\Debug\netcoreapp2.1\MazzaFC.Infraestrutura.Util.AssemblyInfoInputs.cache
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.Util\obj\Debug\netcoreapp2.1\MazzaFC.Infraestrutura.Util.AssemblyInfo.cs
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.Util\obj\Debug\netcoreapp2.1\MazzaFC.Infraestrutura.Util.dll
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.Util\obj\Debug\netcoreapp2.1\MazzaFC.Infraestrutura.Util.pdb

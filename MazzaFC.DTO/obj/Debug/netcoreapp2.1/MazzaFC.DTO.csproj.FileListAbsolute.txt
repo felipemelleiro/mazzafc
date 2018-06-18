@@ -1,0 +1,9 @@
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.DTO\bin\Debug\netcoreapp2.1\MazzaFC.DTO.deps.json
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.DTO\bin\Debug\netcoreapp2.1\MazzaFC.DTO.dll
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.DTO\bin\Debug\netcoreapp2.1\MazzaFC.DTO.pdb
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.DTO\obj\Debug\netcoreapp2.1\MazzaFC.DTO.csprojAssemblyReference.cache
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.DTO\obj\Debug\netcoreapp2.1\MazzaFC.DTO.csproj.CoreCompileInputs.cache
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.DTO\obj\Debug\netcoreapp2.1\MazzaFC.DTO.AssemblyInfoInputs.cache
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.DTO\obj\Debug\netcoreapp2.1\MazzaFC.DTO.AssemblyInfo.cs
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.DTO\obj\Debug\netcoreapp2.1\MazzaFC.DTO.dll
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.DTO\obj\Debug\netcoreapp2.1\MazzaFC.DTO.pdb

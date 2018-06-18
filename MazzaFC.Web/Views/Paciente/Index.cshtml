@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewBag.Title = "Gerenciamento de pacientes";
+}
+
+@section scripts{
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script type="text/javascript">
+        $("#PessoaDocumento").mask("000.000.000-00");
+    </script>
+
+    @Scripts.Render("~/bundles/paciente")
+
+}
+
+<div ng-controller="pacienteController">
+
+    <h2>@ViewBag.Title</h2>
+
+    <div style="margin-bottom:10px;">
+        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalForm" ng-click="novo()">
+            <i class="glyphicon glyphicon-plus"></i> Novo registro
+        </button>
+    </div>
+
+    <div class="">
+
+        <table class="table table-bordered table-striped table-condensed">
+            <thead>
+                <tr>
+                    <th>Açõs</th>
+                    <th>Nome</th>
+                    <th>Documento</th>
+                    <th>Plano de Saúde</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in listaMedicos">
+                    <td class="text-center">
+                        <a href="javascript:void(0);" ng-click="editar(item)"><i class="glyphicon glyphicon-pencil"></i></a>
+                    </td>
+                    <td ng-bind="item.Pessoa.PessoaNome"></td>
+                    <td ng-bind="item.Pessoa.PessoaDocumento"></td>
+                    <td ng-bind="item.PacientePlanoSaude"></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Paciente</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <input type="hidden" name="PacienteId" id="PacienteId" ng-model="PacienteId" />
+
+                        <div class="form-group">
+                            <label for="PessoaDocumento">CPF</label>
+                            <input type="text" class="form-control" id="PessoaDocumento" ng-model="PessoaDocumento" placeholder="CPF do paciente" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="PessoaNome">Nome</label>
+                            <input type="text" class="form-control" id="PessoaNome" ng-model="PessoaNome" placeholder="Nome do paciente">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="PessoaDataNascimento">Data de nascimento</label>
+                            <input type="date" class="form-control" id="PessoaDataNascimento" ng-model="PessoaDataNascimento" placeholder="Data de nascimento">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="PessoaRG">RG</label>
+                            <input type="text" class="form-control" id="PessoaRG" ng-model="PessoaRG" placeholder="RG do paciente">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="PacientePlanoSaude">Plano de saúde</label>
+                            <input type="text" class="form-control" id="PacientePlanoSaude" ng-model="PacientePlanoSaude" placeholder="Plano de saúde do paciente">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" ng-click="salvar()">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

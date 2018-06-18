@@ -1,0 +1,112 @@
+﻿
+@{
+    ViewBag.Title = "Gerenciamento de agendamentos";
+}
+
+@section scripts{
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script type="text/javascript">
+        $(".Data").mask("00/00/0000");
+    </script>
+
+    <script src="~/Scripts/app/paciente/pacienteRepository.js"></script>
+    <script src="~/Scripts/app/medico/medicoRepository.js"></script>
+    @Scripts.Render("~/bundles/agendamento")
+
+}
+
+<div ng-controller="agendamentoController">
+
+    <h2>@ViewBag.Title</h2>
+
+    <div style="margin-bottom:10px;">
+        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalForm" ng-click="novo()">
+            <i class="glyphicon glyphicon-plus"></i> Novo registro
+        </button>
+    </div>
+
+    <div class="">
+
+        <table class="table table-bordered table-striped table-condensed">
+            <thead>
+                <tr>
+                    <th>Açõs</th>
+                    <th>Data</th>
+                    <th>Paciente</th>
+                    <th>Plano de Saúde</th>
+                    <th>Médico</th>
+                    <th>Especialidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in listaAgendamentos">
+                    <td class="text-center">
+                        <a href="javascript:void(0);" ng-click="editar(item)"><i class="glyphicon glyphicon-pencil"></i></a>
+                        <a href="javascript:void(0);" ng-click="excluir(item)"><i class="glyphicon glyphicon-remove"></i></a>
+                    </td>
+                    <td ng-bind="item.AgendamentoDataHoraText"></td>
+                    <td ng-bind="item.Paciente.Pessoa.PessoaNome"></td>
+                    <td ng-bind="item.Paciente.PacientePlanoSaude"></td>
+                    <td ng-bind="item.Medico.Pessoa.PessoaNome"></td>
+                    <td ng-bind="item.Medico.MedicoEspecialidade"></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Agendamento</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <input type="hidden" name="AgendamentoId" id="AgendamentoId" ng-model="AgendamentoId" />
+
+                        <div class="form-group">
+                            <label for="PacienteId">Paciente</label>
+                            <select id="PacienteId" ng-model="PacienteId">
+                                <option ng-repeat="paciente in listaPacientes" value={{paciente.PacienteId}}>
+                                    {{paciente.Pessoa.PessoaNome}}
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="MedicoId">Médico</label>
+                            <select id="MedicoId" ng-model="MedicoId">
+                                <option ng-repeat="medico in listaMedicos" value={{medico.MedicoId}}>
+                                    {{medico.Pessoa.PessoaNome}}
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="AgendamentoDataHora">Data</label>
+                            <input type="text" class="form-control Data" id="AgendamentoDataHora" ng-model="AgendamentoDataHora" placeholder="Informe o agendamento">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="AgendamentoComentario">Observação</label>
+                            <input type="text" class="form-control" id="AgendamentoComentario" ng-model="AgendamentoComentario" placeholder="Informe a observação">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" ng-click="salvar()">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

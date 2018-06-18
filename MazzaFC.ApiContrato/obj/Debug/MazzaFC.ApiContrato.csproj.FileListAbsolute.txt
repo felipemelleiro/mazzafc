@@ -1,0 +1,9 @@
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.ApiContrato\bin\Debug\MazzaFC.ApiContrato.dll
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.ApiContrato\bin\Debug\MazzaFC.ApiContrato.pdb
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.ApiContrato\bin\Debug\Newtonsoft.Json.dll
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.ApiContrato\bin\Debug\Newtonsoft.Json.xml
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.ApiContrato\obj\Debug\MazzaFC.ApiContrato.csprojAssemblyReference.cache
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.ApiContrato\obj\Debug\MazzaFC.ApiContrato.csproj.CoreCompileInputs.cache
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.ApiContrato\obj\Debug\MazzaFC.ApiContrato.csproj.CopyComplete
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.ApiContrato\obj\Debug\MazzaFC.ApiContrato.dll
+C:\Users\felipe.melleiro\Documents\Projetos\mazzafc\MazzaFC.ApiContrato\obj\Debug\MazzaFC.ApiContrato.pdb

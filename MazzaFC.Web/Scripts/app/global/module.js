@@ -1,0 +1,1 @@
+﻿var appmazzafc = angular.module("appMazzaFC", ['ngRoute']);

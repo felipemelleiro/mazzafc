@@ -1,0 +1,75 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "MazzaFC.Dominio/1.0.0": {
+        "dependencies": {
+          "MazzaFC.DTO": "1.0.0",
+          "MazzaFC.Infraestrutura.Util": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Abstractions": "2.1.0.0",
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.1.0.0"
+        },
+        "runtime": {
+          "MazzaFC.Dominio.dll": {}
+        }
+      },
+      "MazzaFC.DTO/1.0.0": {
+        "runtime": {
+          "MazzaFC.DTO.dll": {}
+        }
+      },
+      "MazzaFC.Infraestrutura.Util/1.0.0": {
+        "runtime": {
+          "MazzaFC.Infraestrutura.Util.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Abstractions/2.1.0.0": {
+        "runtime": {
+          "Microsoft.AspNetCore.Mvc.Abstractions.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.18136"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.ViewFeatures/2.1.0.0": {
+        "runtime": {
+          "Microsoft.AspNetCore.Mvc.ViewFeatures.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.18136"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MazzaFC.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MazzaFC.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MazzaFC.Infraestrutura.Util/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Mvc.Abstractions/2.1.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Mvc.ViewFeatures/2.1.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
